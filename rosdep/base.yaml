@@ -2979,6 +2979,20 @@ libconsole-bridge-dev:
 libcos4-dev:
   debian: [libcos4-dev]
   ubuntu: [libcos4-dev]
+libcpp-httplib-dev:
+  debian:
+    '*': [libcpp-httplib-dev]
+    bullseye: null
+  fedora: [cpp-httplib-devel]
+  gentoo: [cpp-httplib]
+  osx:
+    homebrew:
+      packages: [cpp-httplib]
+  rhel: [cpp-httplib-devel]
+  ubuntu:
+    '*': [libcpp-httplib-dev]
+    bionic: null
+    focal: null
 libcpprest-dev:
   debian:
     buster: [libcpprest-dev]
@@ -5253,7 +5267,15 @@ libqt5-sql:
   gentoo: ['dev-qt/qtsql:5']
   nixos: [qt5.qtbase]
   ubuntu: [libqt5sql5]
+libqt5-svg:
+  arch: [qt5-svg]
+  debian: [libqt5svg5]
+  fedora: [qt5-qtsvg]
+  opensuse: [libqt5-qtsvg]
+  rhel: [qt5-qtsvg]
+  ubuntu: [libqt5svg5]
 libqt5-svg-dev:
+  arch: [qt5-svg]
   debian: [libqt5svg5-dev]
   fedora: [qt5-qtsvg-devel]
   freebsd: [qt5-svg]
@@ -5457,6 +5479,14 @@ libsoqt4-dev:
   fedora: [SoQt-devel]
   gentoo: [media-libs/SoQt]
   ubuntu: [libsoqt4-dev]
+libsoundio-dev:
+  alpine: [libsoundio]
+  debian: [libsoundio-dev]
+  fedora: [libsoundio]
+  gentoo: [libsoundio]
+  macports: [libsoundio]
+  nixos: [libsoundio]
+  ubuntu: [libsoundio-dev]
 libspatialindex-dev:
   debian: [libspatialindex-dev]
   fedora: [spatialindex-devel]
@@ -5629,12 +5659,7 @@ libtins-dev:
   ubuntu: [libtins-dev]
 libtool:
   arch: [libtool]
-  debian:
-    buster: [libtool, libltdl-dev, libtool-bin]
-    lenny: [libtool, libltdl3-dev]
-    squeeze: [libtool, libltdl-dev]
-    stretch: [libtool, libltdl-dev, libtool-bin]
-    wheezy: [libtool, libltdl-dev]
+  debian: [libtool, libltdl-dev, libtool-bin]
   fedora: [libtool, libtool-ltdl-devel]
   freebsd: [libtool]
   gentoo: [sys-devel/libtool]
@@ -5644,10 +5669,7 @@ libtool:
   opensuse: [libtool, libltdl7]
   rhel: [libtool, libtool-ltdl-devel]
   slackware: [libtool]
-  ubuntu:
-    bionic: [libtool, libltdl-dev, libtool-bin]
-    focal: [libtool, libltdl-dev, libtool-bin]
-    jammy: [libtool, libltdl-dev, libtool-bin]
+  ubuntu: [libtool, libltdl-dev, libtool-bin]
 libttspico:
   debian: [libttspico-dev, libttspico-data, libttspico-utils, libttspico0]
   ubuntu: [libttspico-dev, libttspico-data, libttspico-utils, libttspico0]
@@ -7466,6 +7488,7 @@ simde:
   debian:
     '*': [libsimde-dev]
     buster: null
+  fedora: [simde-devel]
   rhel:
     '*': [simde-devel]
     '9': null
